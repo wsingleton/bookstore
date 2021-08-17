@@ -16,6 +16,7 @@ phases:
     commands:
       - echo Build completed on `date`
       - unzip bookstore.war -d artifact/
+      - mv artifact/WEB-INF WEB-INF
 artifacts:
   files:
     - WEB-INF/**/*
